@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="card" style="width: 28rem;">
+    <img class="card-img-top" src="assets/image/4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="text-center">Login</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:150px; border-radius: 7px;"> Login</button>
+          </div>
+          <div class="col-sm">
+
+          </div>
+          <div class="col-sm">
+            <button onclick="document.getElementById('id01').style.display='left'" style="width:150px;border-radius: 7px;">Registration</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="id01" class="modal">
+
+        <div class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" [(ngModel)]="name" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter Username" [(ngModel)]="password" required>
+
+            <button type="submit" (click)="login()">Login</button>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+</div>
+
